@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>
+		Weather Forecast
+	</h1>
+	<div class = "container">
+		<div class = "dropdown">
+			<button class = "btn btn-primary dropdown-toggle" type = "button" data-toggle="dropdown">Choose your city
+				<span class = "caret"></span></button>
+				<ul class = "dropdown-menu">
+					<li><a href="#">Hanoi</a></li>
+					<li><a href="#">Paris</a></li>
+					<li><a href="#">Dubai</a></li>
+					<li><a href="#">Buenos Aires</a></li>
+					<li><a href="#">London</a></li>
+					<li><a href="#">New York</a></li>
+					<li><a href="#">New Delhi</a></li>
+					<li><a href="#">Rome</a></li>
+				</ul>
+		</div>
+		<div class = "row">
+			<div class = "col-lg-2 con"><a href="https://www.google.com.vn/search?q=hanoi&rlz=1C1CHBF_enVN782VN782&oq=hanoi&aqs=chrome..69i57j69i60l3j0l2.30494j0j9&sourceid=chrome&ie=UTF-8" target="_blank">
+				<img src="img/hanoi.jpg">
+				<h4>Hanoi</h4></a>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "today"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainhigh.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Storm</p>
+					<p>32→40°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "tomorrow"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainhigh.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Storm</p>
+					<p>30→41°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "after"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Cloudy</p>
+					<p>35→40°C</p>
+				</div>
+			</div>
+		</div>
+
+
+				<div class = "row">
+			<div class = "col-lg-2 con"><a href="https://www.google.com.vn/search?q=paris&rlz=1C1CHBF_enVN782VN782&oq=paris&aqs=chrome..69i57j0l5.27733j0j9&sourceid=chrome&ie=UTF-8" target="_blank">
+				<img src="img/paris.jpg">
+				<h4>Paris</h4></a>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "today"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Sunny</p>
+					<p>20→22°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "tomorrow"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainlow.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Rain</p>
+					<p>18→20°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "after"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Sunny</p>
+					<p>10→20°C</p>
+				</div>
+			</div>
+		</div>
+
+
+				<div class = "row">
+			<div class = "col-lg-2 con"><a href="https://www.google.com.vn/search?q=dubai&rlz=1C1CHBF_enVN782VN782&oq=dubai&aqs=chrome..69i57j69i60l2j0l3.27859j0j9&sourceid=chrome&ie=UTF-8" target="_blank">
+				<img src="img/dubai.jpg">
+				<h4>Dubai</h4></a>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "today"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainhigh.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Storm</p>
+					<p>30→40°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "tomorrow"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainlow.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Rain</p>
+					<p>32→40°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "after"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainhigh.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Thunderstorm</p>
+					<p>33→40°C</p>
+				</div>
+			</div>
+		</div>
+
+			<div class = "row">
+			<div class = "col-lg-2 con"><a href="https://www.google.com.vn/search?q=buenos+aires&rlz=1C1CHBF_enVN782VN782&oq=buenos&aqs=chrome.3.69i57j69i59j69i60j69i59j69i60l2.28685j0j9&sourceid=chrome&ie=UTF-8" target="_blank">
+				<img src="img/buenosaires.jpg">
+				<h4>Buenos Aires</h4></a>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "today"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainhigh.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Storm</p>
+					<p>30→43°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "tomorrow"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainlow.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Rain</p>
+					<p>31→41°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "after"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainlow.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Rain</p>
+					<p>34→40°C</p>
+				</div>
+			</div>
+		</div>
+
+
+	<div class = "row">
+			<div class = "col-lg-2 con"><a href="https://www.google.com.vn/search?q=london&rlz=1C1CHBF_enVN782VN782&oq=london&aqs=chrome..69i57.31196j0j9&sourceid=chrome&ie=UTF-8" target="_blank">
+				<img src="img/london.jpg">
+				<h4>London</h4></a>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "today"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainhigh.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Storm</p>
+					<p>20→25°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "tomorrow"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Sunny</p>
+					<p>14→26°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "after"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Cloud</p>
+					<p>17→25°C</p>
+				</div>
+			</div>
+		</div>
+
+
+	<div class = "row">
+			<div class = "col-lg-2 con"><a href="https://www.google.com.vn/search?q=new+york&rlz=1C1CHBF_enVN782VN782&oq=new+york&aqs=chrome..69i57j0l5.67888j0j9&sourceid=chrome&ie=UTF-8" target="_blank">
+				<img src="img/newyork.jpg">
+				<h4>New York</h4></a>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "today"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Sunny</p>
+					<p>22→25°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "tomorrow"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Cloud</p>
+					<p>25→27°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "after"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Sunny</p>
+					<p>20→30°C</p>
+				</div>
+			</div>
+		</div>
+
+
+	<div class = "row">
+			<div class = "col-lg-2 con"><a href="https://www.google.com.vn/search?rlz=1C1CHBF_enVN782VN782&ei=O90oW8TTNMr0vgTBl4GoCA&q=new+delhi&oq=new+delhi&gs_l=psy-ab.3..35i39k1j0i203k1l8j0.83246.84659.0.85003.9.9.0.0.0.0.258.1073.0j4j2.6.0....0...1c.1.64.psy-ab..3.6.1073...0i67k1j0i131k1.0.t9idXsu6inE" target="_blank">
+				<img src="img/newdelhi.jpg">
+				<h4>New Delhi</h4></a>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "today"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainhigh.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Storm</p>
+					<p>30→33°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "tomorrow"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainlow.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Rain</p>
+					<p>31→40°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "after"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainhigh.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Storm</p>
+					<p>25→36°C</p>
+				</div>
+			</div>
+		</div>
+
+
+	<div class = "row">
+			<div class = "col-lg-2 con"><a href="https://www.google.com.vn/search?q=rome&rlz=1C1CHBF_enVN782VN782&oq=rome&aqs=chrome..69i57j0l5.904j0j7&sourceid=chrome&ie=UTF-8" 
+				target = "_blank">
+				<img src="img/rome.jpg">
+				<h4>Rome</h4></a>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "today"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Cloud</p>
+					<p>20→30°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "tomorrow"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainlow.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Rain</p>
+					<p>20→26°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "after"></p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.PNG">
+				</div>
+				<div class = "col-lg-8">
+					<p>Sunny</p>
+					<p>20→28°C</p>
+				</div>
+			</div>
+		</div>
+	<button class = "btn btn-default" id = "buttonshow" onclick = "show()">Show All</button>
+	</div>	
+	<script src="script.js"></script>	
+</body>
+</html>
