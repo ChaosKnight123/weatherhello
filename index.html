@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  	body{
+  		background: url('bg.jpg');
+  		background-size: 100% 100%;
+		background-attachment: fixed;
+  	}
+  	.container{
+  		width: 50%;
+  	}
+  	.row{
+  		margin-top: 10px;
+  		margin-bottom: 10px;
+  		background-color: rgb(105, 153, 229,0.7);
+  		cursor: pointer;
+  		border-radius: 10px;
+  	}
+  	.col-lg-2.con{
+  		padding: 5px 5px;
+  		 box-shadow: 5px 0px;
+  	}
+  	.col-lg-3{
+  		padding: 0px;
+  	}
+  	.col-lg-1 img{
+  		width: 40px;
+  		height: 40px;
+  	}
+  	.col-lg-10{
+  		padding-top: 10px;
+  	}
+  	.col-lg-8 p:nth-child(2){
+  		position: absolute;
+  		right: 50px;
+  	}
+  	h1{
+		text-align: center;
+		text-transform: uppercase;
+		padding-top: 50px;
+		font-family: "Arial";
+  	}
+  	img{
+  		width: 100px;
+  		height: 100px;
+		border-radius: 10px;
+   	} 	  	  	
+  	.col-lg-8 p{
+		display: inline-block;
+		margin-left: 60px;
+  	}
+  	.row:hover{
+  		background-color: rgb(182, 187, 196);
+  	}	
+  	button{
+  		margin-top: 20px;
+  	}
+  	#buttonshow{
+  			margin-left: 40%;
+  			margin-bottom: 20px;
+  	}
+  	#buttonshow:hover{
+  		color: #6a7ea0;
+  	}
+  	@media only screen and (max-width: 1200px){
+	.col-lg-2.con{
+  		 box-shadow: 0px 0px;
+  	}
+  	}
+  </style>
+</head>
+<body>
+	<h1>
+		Weather Forecast
+	</h1>
+	<div class = "container">
+		<div class = "dropdown">
+			<button class = "btn btn-primary dropdown-toggle" type = "button" data-toggle="dropdown">Choose your city
+				<span class = "caret"></span></button>
+				<ul class = "dropdown-menu">
+					<li><a href="#">Hanoi</a></li>
+					<li><a href="#">Paris</a></li>
+					<li><a href="#">Dubai</a></li>
+					<li><a href="#">Buenos Aires</a></li>
+					<li><a href="#">London</a></li>
+					<li><a href="#">New York</a></li>
+					<li><a href="#">New Delhi</a></li>
+					<li><a href="#">Rome</a></li>
+				</ul>
+		</div>
+		<div class = "row">
+			<div class = "col-lg-2 con">
+				<img src="img/hanoi.jpg">
+				<h4>Hanoi</h4>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "today">Today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainhigh.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Storm</p>
+					<p>32→40°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "tomorrow">today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainhigh.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Storm</p>
+					<p>30→41°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "after">Today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Cloudy</p>
+					<p>35→40°C</p>
+				</div>
+			</div>
+		</div>
+
+
+				<div class = "row">
+			<div class = "col-lg-2 con">
+				<img src="img/paris.jpg">
+				<h4>Paris</h4>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "today">Today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Sunny</p>
+					<p>20→22°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "tomorrow">today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainlow.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Rain</p>
+					<p>18→20°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "after">Today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Sunny</p>
+					<p>10→20°C</p>
+				</div>
+			</div>
+		</div>
+
+
+				<div class = "row">
+			<div class = "col-lg-2 con">
+				<img src="img/dubai.jpg">
+				<h4>Dubai</h4>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "today">Today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainhigh.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Storm</p>
+					<p>30→40°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "tomorrow">today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainlow.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Rain</p>
+					<p>32→40°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "after">Today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainhigh.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Thunderstorm</p>
+					<p>33→40°C</p>
+				</div>
+			</div>
+		</div>
+
+			<div class = "row">
+			<div class = "col-lg-2 con">
+				<img src="img/buenosaires.jpg">
+				<h4>Buenos Aires</h4>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "today">Today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainhigh.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Storm</p>
+					<p>30→43°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "tomorrow">today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainlow.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Rain</p>
+					<p>31→41°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "after">Today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainlow.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Rain</p>
+					<p>34→40°C</p>
+				</div>
+			</div>
+		</div>
+
+
+	<div class = "row">
+			<div class = "col-lg-2 con">
+				<img src="img/London.jpg">
+				<h4>London</h4>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "today">Today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainhigh.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Storm</p>
+					<p>20→25°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "tomorrow">today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Sunny</p>
+					<p>14→26°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "after">Today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Cloud</p>
+					<p>17→25°C</p>
+				</div>
+			</div>
+		</div>
+
+
+	<div class = "row">
+			<div class = "col-lg-2 con">
+				<img src="img/newyork.jpg">
+				<h4>New York</h4>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "today">Today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Sunny</p>
+					<p>22→25°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "tomorrow">today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Cloud</p>
+					<p>25→27°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "after">Today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Sunny</p>
+					<p>20→30°C</p>
+				</div>
+			</div>
+		</div>
+
+
+	<div class = "row">
+			<div class = "col-lg-2 con">
+				<img src="img/newdelhi.jpg">
+				<h4>New Delhi</h4>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "today">Today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainhigh.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Storm</p>
+					<p>30→33°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "tomorrow">today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainlow.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Rain</p>
+					<p>31→40°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "after">Today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainhigh.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Storm</p>
+					<p>25→36°C</p>
+				</div>
+			</div>
+		</div>
+
+
+	<div class = "row">
+			<div class = "col-lg-2 con">
+				<img src="img/rome.jpg">
+				<h4>Rome</h4>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "today">Today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Cloud</p>
+					<p>20→30°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "tomorrow">today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/rainlow.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Rain</p>
+					<p>20→26°C</p>
+				</div>
+			</div>
+			<div class = "col-lg-10">
+				<div class = "col-lg-3">
+					<p class = "after">Today, 10 june</p>
+				</div>
+				<div class = "col-lg-1">
+					<img src="img/sunny.png">
+				</div>
+				<div class = "col-lg-8">
+					<p>Sunny</p>
+					<p>20→28°C</p>
+				</div>
+			</div>
+		</div>
+	<button class = "btn btn-default" id = "buttonshow" onclick = "show()">Show All</button>
+	</div>						
+<script>
+	var today = document.getElementsByClassName("today");
+	var tomorrow = document.getElementsByClassName("tomorrow");
+	var after = document.getElementsByClassName("after");
+	var row = document.getElementsByClassName("row");
+	var btn = document.getElementById("buttonshow");
+	var day = new Date();
+	var nextday = new Date(day);
+	var afterday = new Date(day);
+	nextday.setDate(day.getDate()+1);
+	afterday.setDate(day.getDate()+2);
+	var weekday = new Array(7);
+	weekday[0] =  "Sunday";
+	weekday[1] = "Monday";
+	weekday[2] = "Tuesday";
+	weekday[3] = "Wednesday";
+	weekday[4] = "Thursday";
+	weekday[5] = "Friday";
+	weekday[6] = "Saturday";
+	for(var i = 0 ; i< today.length; i++){
+		for(var i = 0 ; i< tomorrow.length; i++){
+			for(var i = 0 ; i< after.length; i++){
+		today[i].innerHTML = weekday[day.getDay()]+" "+day.getMonth()+"-"+day.getDate();	
+		tomorrow[i].innerHTML = weekday[nextday.getDay()]+" "+nextday.getMonth()+"-"+nextday.getDate();
+		after[i].innerHTML = weekday[afterday.getDay()]+" "+afterday.getMonth()+"-"+afterday.getDate();
+	}
+	}
+	}	
+	$(document).ready(function(){
+		$('ul li').click(function(){
+			var b = $(this).index();
+			for(var i = 0; i<row.length; i++){
+				row[i].style.display = 'none';
+			}
+			row[b].style.display = "block";
+			btn.style.display = "block";
+		})
+		btn.style.display = "none";
+	});
+	function show(){
+		for(var i =0 ; i< row.length; i++){
+    	row[i].style.display = "block";
+    	btn.style.display = "none";
+    }
+	}
+</script>
+</body>
+</html>
