@@ -1,4 +1,4 @@
-var today = document.getElementsByClassName("today");
+	var today = document.getElementsByClassName("today");
 	var tomorrow = document.getElementsByClassName("tomorrow");
 	var after = document.getElementsByClassName("after");
 	var row = document.getElementsByClassName("row");
@@ -27,18 +27,18 @@ var today = document.getElementsByClassName("today");
 	}	
 	$(document).ready(function(){
 		$('ul li').click(function(){
-			var b = $(this).index();
+			var b = $(this).index()+2;
 			for(var i = 0; i<row.length; i++){
-				row[i].style.display = 'none';
+				$('.row').slideUp('slow');
 			}
-			row[b].style.display = "block";
+			$(".row:nth-child("+b+")").slideDown('slow');
 			btn.style.display = "block";
 		})
 		btn.style.display = "none";
 	});
 	function show(){
 		for(var i =0 ; i< row.length; i++){
-    	row[i].style.display = "block";
+				$('.row').slideDown('fast');
     	btn.style.display = "none";
     }
 	}
